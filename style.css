@@ -17,7 +17,14 @@ body {
   padding: 15px 6%;
 }
 
+@media (max-width: 600px) {
+  #container {
+      padding: 10px 2%;
+  }
+}
+
 nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -52,6 +59,23 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  nav ul li {
+      margin: 5px 0; 
+  }
+
+  #main-img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+}
+}
+
 .main {
   margin-top: 9%;
 }
@@ -84,13 +108,24 @@ nav ul li a:hover::after {
   color: red;
 }
 
+@media (max-width: 600px) {
+  #main-text h1 {
+      font-size: 4rem; 
+  }
+
+  #container p {
+      font-size: 1.2rem; 
+  }
+}
+
 #container p{
   font-size: 140%;
 }
 
+
 /* about */
 #about{
-  padding: 15% 8%;
+  padding: 15% 8% 8% 8%;
 }
 
 .row{
@@ -99,8 +134,18 @@ nav ul li a:hover::after {
   flex-wrap: wrap;
 }
 
+@media (max-width: 800px) {
+  .about-col1, .about-col2 {
+      flex-basis: 100%;
+      
+      margin: 0; 
+      
+      padding: 1rem; 
+      
+  }
+}
+
 #about .container{
-  background: #fff;
   background-color: #ffffff08;
   object-fit: cover;
   width: 100%;
@@ -124,4 +169,72 @@ nav ul li a:hover::after {
   overflow: hidden;
 }
 
+.langs{
+  display: flex;
+  margin: 5% ;
+  padding: 0 10%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
+}
+.langs .border{
+  border-right: 2px solid #ffffff54;
+}
+.langs img{
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+  position: relative;
+}
+.langs .box{
+  background-color: #ffffff08;
+  object-fit: cover;
+}
+.langs p{
+  font-weight: 500;
+  font-size: 115%;
+}
 
+.edu{
+  padding: 2%;
+  background-color: #ffffff08;
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  border-left: 2px solid #ffffff54;
+  overflow: hidden;
+}
+.head-box{
+  margin-bottom: 2%;
+}
+.edu .box p{
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.edu .box p span{
+  font-weight: 700;
+  color: red;
+}
+
+/* contact */
+
+#contact{
+  padding: 1rem 8%;
+}
+#contact ul{
+  display: flex;
+}
+#contact ul li{
+  list-style: none;
+  padding: 6%;
+  font-size: 200%;
+}
+
+#contact ul li:hover{
+  filter: drop-shadow(0 0 10px #ffffff);
+  transform: scale(1.3);
+}
