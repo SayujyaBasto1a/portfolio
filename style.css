@@ -265,7 +265,7 @@ textarea {
 
 /* ---------FOR SMALL SCREEN----------- */
 
-@media (max-width: 650px) {
+@media (max-width: 1080px) {
   nav .fa-solid {
     display: block;
     font-size: 175%;
