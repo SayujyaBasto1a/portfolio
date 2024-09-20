@@ -12,17 +12,18 @@
     <div id="header">
       <div id="container">
         <nav>
-          <ul>
+          <ul id="sideMenu">
             <li><a href="#header" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Projects</a></li>
+            <li><a href="#header">Services</a></li>
+            <li><a href="#header">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"onclick="openMenu()"></i>
         </nav>
         <div class="main">
           <div id="main-img">
-            <!-- <img src=""> -->
           </div>
           <div id="main-text">
             <h1>SAYUJYA <span>BASTOLA</span></h1>
@@ -63,10 +64,10 @@
           >
             <div class="about-text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae in itaque corporis laborum assumenda culpa quibusdam.
-                Maxime inventore excepturi ab accusamus reiciendis. Repellat
-                dolores excepturi maiores, laboriosam ipsum voluptates odit.
+                I'm Sayujya, a student with a passion for crafting engaging and user-friendly websites. 
+                I love exploring new technologies and tackling creative challenges. 
+                In my free time, I enjoy building personal projects and staying updated on the latest web trends.
+                I am currently honing my skills in following :  
               </p>
             </div>
           </div>
@@ -176,6 +177,7 @@
             </ul>
           </div>
           <div class="contact-right">
+            <div class="form-container">
             <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
@@ -188,8 +190,11 @@
                 name="Message"
                 placeholder="Message or Feedback"
                 rows="6"
-              ></textarea>
-              <button type="submit" class="neon-button">Submit</button>
+              ></textarea></div>
+              <div class="button-container">
+                <button type="submit" class="neon-button">Submit</button>
+                <button type="reset" class="neon-button">Reset</button>
+            </div>
             </form>
           </div>
         </div>
@@ -205,6 +210,7 @@
         offset: 300,
       });
     </script>
-    <script src="animation.js"></script>
+    <script src="buttton.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
