@@ -185,7 +185,7 @@ nav ul li a:hover::after {
 
 #contact {
   margin-bottom: 1rem;
-  padding: 8rem 8% 1rem 8%;
+  padding: 7rem 8% 1rem 8%;
 }
 #contact ul {
   display: flex;
@@ -265,7 +265,7 @@ textarea {
 
 /* ---------FOR SMALL SCREEN----------- */
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   nav .fa-solid {
     display: block;
     font-size: 175%;
@@ -384,10 +384,13 @@ textarea {
   .edu .head-box h2 {
     font-size: 115%;
   }
-
+  #contact{
+    padding-top: 12.8rem;
+    margin-bottom: 5rem;
+  }
   #contact h1 {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 2%;
   }
 
   #contact ul {
@@ -430,5 +433,9 @@ textarea {
     align-items: flex-end;
     text-align: justify;
     overflow: hidden;
+  }
+
+  #contact{
+    padding-top: 18rem;
   }
 }
