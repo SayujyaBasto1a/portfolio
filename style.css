@@ -461,8 +461,9 @@ textarea {
   }
 
   #topBtn{
-    font-size: 22px;
-    right: 4px;
+    font-size: 30px;
+    right: 7px;
+    bottom: 35px;
   }
 }
 
